@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+	<Container version="2">
+		<Name>mysql</Name>
+		<Repository>mysql:latest</Repository>
+		<Registry />
+		<Network>host</Network>
+		<MyIP />
+		<Shell>bash</Shell>
+		<Privileged>false</Privileged>
+		<Support />
+		<Project />
+		<Overview>这就是mysql呀</Overview>
+		<Category />
+		<WebUI></WebUI>
+		<TemplateURL />
+		<Icon>https://file.lxg2016.com/assets/ico/qinglong.png</Icon>
+		<ExtraParams>--hostname mysql</ExtraParams>
+		<PostArgs />
+		<CPUset />
+		<DateInstalled>15822511425</DateInstalled>
+		<DonateText />
+		<DonateLink />
+		<Description />
+		<Networking>
+			<Mode>bridge</Mode>
+			<Publish>
+				<Port>
+					<HostPort>3306</HostPort>
+					<ContainerPort>3306</ContainerPort>
+					<Protocol>tcp</Protocol>
+				</Port>
+				<Port>
+					<HostPort>33060</HostPort>
+					<ContainerPort>33060</ContainerPort>
+					<Protocol>tcp</Protocol>
+				</Port>
+			</Publish>
+		</Networking>
+		<Data>
+			<Volume>
+				<HostDir>/mnt/user/appdata/mysql/logs</HostDir>
+				<ContainerDir>/logs</ContainerDir>
+				<Mode>rw</Mode>
+			</Volume>
+			<Volume>
+				<HostDir>/mnt/user/appdata/mysql/conf</HostDir>
+				<ContainerDir>/etc/mysql</ContainerDir>
+				<Mode>rw</Mode>
+			</Volume>
+			<Volume>
+				<HostDir>/mnt/user/appdata/mysql/data</HostDir>
+				<ContainerDir>/var/lib/mysql</ContainerDir>
+				<Mode>rw</Mode>
+			</Volume>
+		</Data>
+		<Environment>
+			<Variable>
+				<Value></Value>
+				<Name>PASSWORD</Name>
+				<Mode/>
+			</Variable>
+		</Environment>
+		<Config Name="Password" Target="MYSQL_ROOT_PASSWORD" Default="" Mode="" Description="mysql root password, if not provided, there will be no auth" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+		<Config Name="logs" Target="/logs" Default="" Mode="rw" Description="Container Path: /logs" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/mysql/logs</Config>
+		<Config Name="/etc/mysql" Target="/etc/mysql" Default="" Mode="rw" Description="Container Path: /etc/mysql" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/mysql/conf</Config>
+		<Config Name="/var/lib/mysql" Target="/var/lib/mysql" Default="" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/mysql/data</Config>
+	</Container>
+
