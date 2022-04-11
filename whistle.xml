@@ -3,21 +3,21 @@
 		<Name>whistle</Name>
 		<Repository>yonh/whistle</Repository>
 		<Registry />
-		<Network>host</Network>
+		<Network>bridge</Network>
 		<MyIP />
-		<Shell>bash</Shell>
+		<Shell>sh</Shell>
 		<Privileged>false</Privileged>
 		<Support />
 		<Project />
 		<Overview>这就是whistle呀</Overview>
 		<Category />
-		<WebUI></WebUI>
+		<WebUI>http://[IP]:[PORT:8899]</WebUI>
 		<TemplateURL />
 		<Icon>https://file.lxg2016.com/assets/ico/qinglong.png</Icon>
 		<ExtraParams>--hostname whistle</ExtraParams>
 		<PostArgs />
 		<CPUset />
-		<DateInstalled>15822511429</DateInstalled>
+		<DateInstalled>1582251596</DateInstalled>
 		<DonateText />
 		<DonateLink />
 		<Description />
@@ -27,7 +27,6 @@
 				<Port>
 					<HostPort>8899</HostPort>
 					<ContainerPort>8899</ContainerPort>
-					<Protocol>tcp</Protocol>
 				</Port>
 			</Publish>
 		</Networking>
