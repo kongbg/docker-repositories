@@ -33,4 +33,5 @@
 		</Networking>
 		<Data>
 		</Data>
+		<Config Name="WEB Port" Target="8899" Default="" Mode="tcp" Description="Container Port: 8899" Type="Port" Display="always" Required="false" Mask="false">8899</Config>
 	</Container>
