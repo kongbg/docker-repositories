@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+	<Container version="2">
+		<Name>whistle</Name>
+		<Repository>yonh/whistle</Repository>
+		<Registry />
+		<Network>host</Network>
+		<MyIP />
+		<Shell>bash</Shell>
+		<Privileged>false</Privileged>
+		<Support />
+		<Project />
+		<Overview>这就是whistle呀</Overview>
+		<Category />
+		<WebUI></WebUI>
+		<TemplateURL />
+		<Icon>https://file.lxg2016.com/assets/ico/qinglong.png</Icon>
+		<ExtraParams>--hostname whistle</ExtraParams>
+		<PostArgs />
+		<CPUset />
+		<DateInstalled>15822511429</DateInstalled>
+		<DonateText />
+		<DonateLink />
+		<Description />
+		<Networking>
+			<Mode>bridge</Mode>
+			<Publish>
+				<Port>
+					<HostPort>8899</HostPort>
+					<ContainerPort>8899</ContainerPort>
+					<Protocol>tcp</Protocol>
+				</Port>
+			</Publish>
+		</Networking>
+		<Data>
+		</Data>
+	</Container>
