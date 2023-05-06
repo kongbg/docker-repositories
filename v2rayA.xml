@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>v2rayA</Name>
+  <Repository>mzz2017/v2raya:last</Repository>
+  <Registry>https://hub.docker.com/r/mzz2017/v2raya</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://github.com/v2rayA/v2rayA</Support>
+  <Project>https://github.com/v2rayA/v2rayA</Project>
+  <Overview>v2rayA is ...</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL></TemplateURL>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/54e48877dab8df8f92cd.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683343453</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>v2rayA is ...</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2017</HostPort>
+        <ContainerPort>2017</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/v2raya</HostDir>
+      <ContainerDir>/etc/v2raya</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/v2raya/modules</HostDir>
+      <ContainerDir>/lib/modules</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Labels/>
+  <Config Name="WEB_PORT" Target="2017" Default="2017" Mode="tcp" Description="web_port" Type="Port" Display="always" Required="false" Mask="false">2017</Config>
+  <Config Name="v2raya" Target="/etc/v2raya" Default="/mnt/user/appdata/v2raya" Mode="rw" Description="映射/etc/v2raya目录到宿主机" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2raya</Config>
+  <Config Name="modules" Target="/lib/modules" Default="/mnt/user/appdata/v2raya/modules" Mode="rw" Description="映射/lib/modules目录到宿主机" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/v2raya/modules</Config>
+</Container>
