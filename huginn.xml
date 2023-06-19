@@ -22,13 +22,6 @@
 		<Description />
 		<Networking>
 			<Mode>bridge</Mode>
-			<Publish>
-				<Port>
-					<HostPort>3001</HostPort>
-					<ContainerPort>3000</ContainerPort>
-					<Protocol>tcp</Protocol>
-				</Port>
-			</Publish>
 		</Networking>
 	</Container>
 
